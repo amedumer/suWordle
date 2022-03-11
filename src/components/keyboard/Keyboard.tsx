@@ -40,7 +40,10 @@ export const Keyboard = ({
       } else {
         const key = localeAwareUpperCase(e.key)
         // TODO: check this test if the range works with non-english letters
-        if (key.length === 1 && key >= 'A' && key <= 'Z') {
+        if (
+          key.length === 1 &&
+          ((key >= 'A' && key <= 'Z') || (key >= '0' && key <= '9'))
+        ) {
           onChar(key)
         }
       }
@@ -53,6 +56,17 @@ export const Keyboard = ({
 
   return (
     <div>
+      <div className="flex justify-center mb-1">
+        {['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'].map((key) => (
+          <Key
+            value={key}
+            key={key}
+            onClick={onClick}
+            status={charStatuses[key]}
+            isRevealing={isRevealing}
+          />
+        ))}
+      </div>
       <div className="flex justify-center mb-1">
         {['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'].map((key) => (
           <Key

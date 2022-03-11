@@ -20,4 +20,10 @@ export const WORDS = [
   'lokma',
   'major',
   'minor',
+  'if100',
+  'ns101',
+  'al102',
+  'ns102',
+  'cs201',
+  'cs204',
 ]
