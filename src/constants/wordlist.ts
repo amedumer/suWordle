@@ -26,4 +26,5 @@ export const WORDS = [
   'ns102',
   'cs201',
   'cs204',
+  'curve',
 ]
