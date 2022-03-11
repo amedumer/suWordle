@@ -27,4 +27,5 @@ export const WORDS = [
   'cs201',
   'cs204',
   'curve',
+  'cemil',
 ]
