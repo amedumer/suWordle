@@ -4,6 +4,7 @@ export const WORDS = [
   'susam',
   'sunum',
   'aksin',
+  'somel',
   'ayhan',
   'yucel',
   'baris',
